@@ -10,6 +10,8 @@
 		8F50D88D1755070400DFEAD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F50D88C1755070400DFEAD9 /* Foundation.framework */; };
 		8F50D8921755070400DFEAD9 /* RGToast.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F50D8911755070400DFEAD9 /* RGToast.h */; };
 		8F50D8941755070400DFEAD9 /* RGToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50D8931755070400DFEAD9 /* RGToast.m */; };
+		8FB2BA5C17553A00008DDCA7 /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB2BA5917553A00008DDCA7 /* NSMutableArray+QueueAdditions.m */; };
+		8FB2BA5D17553A00008DDCA7 /* RGToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB2BA5B17553A00008DDCA7 /* RGToastView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		8F50D8901755070400DFEAD9 /* RGToast-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RGToast-Prefix.pch"; sourceTree = "<group>"; };
 		8F50D8911755070400DFEAD9 /* RGToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGToast.h; sourceTree = "<group>"; };
 		8F50D8931755070400DFEAD9 /* RGToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGToast.m; sourceTree = "<group>"; };
+		8FB2BA5817553A00008DDCA7 /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
+		8FB2BA5917553A00008DDCA7 /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		8FB2BA5A17553A00008DDCA7 /* RGToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGToastView.h; sourceTree = "<group>"; };
+		8FB2BA5B17553A00008DDCA7 /* RGToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGToastView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,10 @@
 		8F50D88E1755070400DFEAD9 /* RGToast */ = {
 			isa = PBXGroup;
 			children = (
+				8FB2BA5817553A00008DDCA7 /* NSMutableArray+QueueAdditions.h */,
+				8FB2BA5917553A00008DDCA7 /* NSMutableArray+QueueAdditions.m */,
+				8FB2BA5A17553A00008DDCA7 /* RGToastView.h */,
+				8FB2BA5B17553A00008DDCA7 /* RGToastView.m */,
 				8F50D8911755070400DFEAD9 /* RGToast.h */,
 				8F50D8931755070400DFEAD9 /* RGToast.m */,
 				8F50D88F1755070400DFEAD9 /* Supporting Files */,
@@ -140,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F50D8941755070400DFEAD9 /* RGToast.m in Sources */,
+				8FB2BA5C17553A00008DDCA7 /* NSMutableArray+QueueAdditions.m in Sources */,
+				8FB2BA5D17553A00008DDCA7 /* RGToastView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
