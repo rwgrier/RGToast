@@ -10,25 +10,25 @@
 #import "RGToast.h"
 #import "NSMutableArray+QueueAdditions.h"
 
-#define kRGLongToastDuration 2.0f
+#define kRGLongToastDuration  2.0f
 #define kRGShortToastDuration 1.0f
-#define kRGToastBarHeight 20.0f
+#define kRGToastBarHeight     20.0f
 #define kRGSLabelPaddingWidth 10.0f
-#define kRGToastAlpha 0.85f
-#define kRGScreenWidth [UIScreen mainScreen].bounds.size.width
-#define kRGScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kRGToastAlpha         0.85f
+#define kRGScreenWidth        [UIScreen mainScreen].bounds.size.width
+#define kRGScreenHeight       [UIScreen mainScreen].bounds.size.height
 
 @interface RGToastView ()
 
-@property (nonatomic, strong) NSMutableArray*   toasts;
-@property (nonatomic, strong) RGToast*          currentToast;
-@property (nonatomic, strong) UILabel*          messageLabel;
+@property (nonatomic, strong) NSMutableArray *toasts;
+@property (nonatomic, strong) RGToast *currentToast;
+@property (nonatomic, strong) UILabel *messageLabel;
 
 @end
 
 @implementation RGToastView
 
-- (id) init {
+- (id)init {
     self = [super init];
     
     if (self) {
@@ -37,7 +37,7 @@
         
         // Build the UI here.
         CGRect screenBounds = [[UIScreen mainScreen] bounds];
-        self.frame = CGRectMake(0.0, kRGScreenHeight - kRGToastBarHeight, kRGScreenWidth, kRGToastBarHeight);;
+        self.frame = CGRectMake(0.0, kRGScreenHeight - kRGToastBarHeight, kRGScreenWidth, kRGToastBarHeight);
         self.windowLevel = UIWindowLevelStatusBar + 1.0f;
         self.backgroundColor = [UIColor blackColor];
         self.hidden = TRUE;
@@ -58,13 +58,13 @@
     return self;
 }
 
-- (void) dealloc {
+- (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-+ (RGToastView *) sharedToastView {
++ (RGToastView *)sharedToastView {
     static dispatch_once_t pred;
-    __strong static RGToastView* sharedToastView = nil;
+    __strong static RGToastView *sharedToastView = nil;
     
     dispatch_once(&pred, ^{
         sharedToastView = [[RGToastView alloc] init];
@@ -74,7 +74,7 @@
 }
 
 #pragma mark - Public Methods
-- (void) showToast: (RGToast*) toast {
+- (void)showToast:(RGToast *)toast {
     if (!toast) {
         return;
     }
@@ -87,8 +87,8 @@
 }
 
 #pragma mark - Private Methods
-- (void) showNextToast {
-    RGToast* nextToast = nil;
+- (void)showNextToast {
+    RGToast *nextToast = nil;
     
     if ([self.toasts count] > 0) {
         nextToast = [self.toasts dequeue];
@@ -108,7 +108,7 @@
     }
 }
 
-- (void) hideCurrentToast {
+- (void)hideCurrentToast {
     [UIView animateWithDuration:0.35f animations:^{
         self.hidden = TRUE;
         self.alpha = 0.0f;

@@ -15,12 +15,12 @@ typedef enum RGToastViewDuration {
 
 @interface RGToast : NSObject
 
-@property (nonatomic, copy) NSString*               message;
-@property (nonatomic, assign) RGToastViewDuration   duration;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, assign) RGToastViewDuration duration;
 
-+ (RGToast*) makeToast: (NSString*) message;
-+ (RGToast*) makeToast: (NSString*) message duration: (RGToastViewDuration) duration;
++ (RGToast *)makeToast:(NSString *)message;
++ (RGToast *)makeToast:(NSString *)message duration:(RGToastViewDuration)duration;
 
-- (void) show;
+- (void)show;
 
 @end

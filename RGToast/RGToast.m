@@ -10,23 +10,23 @@
 
 @implementation RGToast
 
-+ (RGToast*) makeToast: (NSString*) message {
++ (RGToast *)makeToast:(NSString *)message {
     return [RGToast makeToast:message duration:RGToastViewDurationShort];
 }
 
-+ (RGToast*) makeToast: (NSString*) message duration: (RGToastViewDuration) duration {
-    RGToast* toast = [[RGToast alloc] init];
++ (RGToast *)makeToast:(NSString *)message duration:(RGToastViewDuration)duration {
+    RGToast *toast = [[RGToast alloc] init];
     toast.message = message;
     toast.duration = duration;
     
     return toast;
 }
 
-- (void) show {
+- (void)show {
     [[RGToastView sharedToastView] showToast:self];
 }
 
-- (NSString*) description {
+- (NSString *)description {
     return [NSString stringWithFormat:@"RGToast: { message: %@; duration: %u }", self.message, self.duration];
 }
 

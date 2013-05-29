@@ -11,8 +11,8 @@
 @class RGToast;
 @interface RGToastView : UIWindow
 
-+ (RGToastView *) sharedToastView;
++ (RGToastView *)sharedToastView;
 
-- (void) showToast: (RGToast*) toast;
+- (void)showToast:(RGToast *)toast;
 
 @end
