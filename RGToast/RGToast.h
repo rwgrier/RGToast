@@ -17,11 +17,9 @@ typedef enum RGToastViewDuration {
 
 @property (nonatomic, copy) NSString*               message;
 @property (nonatomic, assign) RGToastViewDuration   duration;
-@property (nonatomic, assign) BOOL                  animate;
 
 + (RGToast*) makeToast: (NSString*) message;
 + (RGToast*) makeToast: (NSString*) message duration: (RGToastViewDuration) duration;
-+ (RGToast*) makeToast: (NSString*) message duration: (RGToastViewDuration) duration animated: (BOOL) animated;
 
 - (void) show;
 
