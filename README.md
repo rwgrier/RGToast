@@ -42,7 +42,7 @@ I have also written and provided a sample app called
 
 ## Docs
 
-[Appledocs](./docs)
+[Appledocs](http://rwgrier.github.io/RGToast/docs/)
 
 ## Creator
 
