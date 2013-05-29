@@ -1,5 +1,6 @@
 RGToast
 =======
+[![Build Status](https://travis-ci.org/rwgrier/RGToast.png?branch=master)](https://travis-ci.org/rwgrier/RGToast)
 
 RGToast provides a toast through the UI for users to see a temporary message shown on 
 the screen. Inspiration for RGToast is taken from both [Matthias Tretter's](https://github.com/myell0w)
