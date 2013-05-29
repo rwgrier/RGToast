@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>RGToast by rwgrier</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>RGToast</h1>
+        <p>RGToast provides a toast through the UI for users to see a temporary message shown on the screen.</p>
+
+        <p class="view"><a href="https://github.com/rwgrier/RGToast">View the Project on GitHub <small>rwgrier/RGToast</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/rwgrier/RGToast/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/rwgrier/RGToast/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/rwgrier/RGToast">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="rgtoast" class="anchor" href="#rgtoast"><span class="octicon octicon-link"></span></a>RGToast</h1>
+
+<p><a href="https://travis-ci.org/rwgrier/RGToast"><img src="https://travis-ci.org/rwgrier/RGToast.png?branch=master" alt="Build Status"></a></p>
+
+<p>RGToast provides a toast through the UI for users to see a temporary message shown on 
+the screen. Inspiration for RGToast is taken from both <a href="https://github.com/myell0w">Matthias Tretter's</a>
+<a href="https://github.com/myell0w/MTStatusBarOverlay">MTStatusBarOverlay</a> and Android's 
+<a href="http://developer.android.com/reference/android/widget/Toast.html">Toast</a> mechanism. </p>
+
+<p>RGToast currently only shows a toast as an overlay at the bottom of the screen. </p>
+
+<p><img src="https://raw.github.com/rwgrier/RGToast/master/images/RGToast-v1.0-portrait.png" alt="RGToast-Portrait"><img src="https://raw.github.com/rwgrier/RGToast/master/images/RGToast-v1.0-landscape.png" alt="RGToast-Landscape"></p>
+
+<p>My plans are to add different styles of toasts in a future version. </p>
+
+<h2>
+<a name="add-rgtoast-to-project" class="anchor" href="#add-rgtoast-to-project"><span class="octicon octicon-link"></span></a>Add RGToast to Project</h2>
+
+<p>Use <a href="http://cocoapods.org/">CocoaPods</a> to add RGToast to your <code>Podfile</code>:</p>
+
+<pre><code>pod 'RGToast', '1.0.0'
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Add RGToast to your ViewController:</p>
+
+<pre><code>#import "RGToast.h"
+</code></pre>
+
+<p>This call will show a toast with a short duration. </p>
+
+<pre><code>[[RGToast makeToast:@"Toast!"] show];
+</code></pre>
+
+<p>To get a bit more granular, make this call:</p>
+
+<pre><code>[[RGToast makeToast:@"Long Toast!" duration:RGToastViewDurationLong] show];
+</code></pre>
+
+<p>That's it! </p>
+
+<h2>
+<a name="sample-app" class="anchor" href="#sample-app"><span class="octicon octicon-link"></span></a>Sample App</h2>
+
+<p>I have also written and provided a sample app called 
+<a href="https://github.com/rwgrier/RGToastSample">RGToastSample</a> that shows you how to use the app. </p>
+
+<h2>
+<a name="docs" class="anchor" href="#docs"><span class="octicon octicon-link"></span></a>Docs</h2>
+
+<p><a href="./docs">Appledocs</a></p>
+
+<h2>
+<a name="creator" class="anchor" href="#creator"><span class="octicon octicon-link"></span></a>Creator</h2>
+
+<p><a href="http://github.com/rwgrier">Ryan Grier</a><br><a href="https://twitter.com/rwgrier">@rwgrier</a></p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>RGToast is available under the MIT license. See the LICENSE file for more info.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/rwgrier">rwgrier</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
